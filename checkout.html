@@ -133,11 +133,20 @@
     </div>
 
     <div class="form-container">
+        <form class="back"> 
+            <input type="button" value="<< Back"
+            onclick="history.go(-1)">
+        </form>
+
+        <br>
+        <br>
+        <br>
+
         <h2 class="form-title">Payment Details</h2>
         <form action="" class="checkout-form">
             <div class="input-line">
                 <label for="name">Name of Cardholder</label>
-                <input type="text" name="name" id="name" placeholder="Your name and surname">
+                <input type="text" name="name" id="name" placeholder="Name and surname">
             </div>
             <div class="input-line">
                 <label for="name">Card Number</label>
@@ -154,25 +163,28 @@
                 </div>
             </div>
         </form>
+        <br>
+        <br>
+        <br>
         <!--Shipping-->
         <h2 class="form-title">Shipping Details</h2>
         <form action="" class="checkout-form">
             <div class="input-line">
-                <label for="name">Name of Cardholder</label>
-                <input type="text" name="name" id="name" placeholder="Your name and surname">
+                <label for="name">Address Line 1</label>
+                <input type="text" name="address" id="address" placeholder="11A Applecross Road">
             </div>
             <div class="input-line">
-                <label for="name">Card Number</label>
-                <input type="text" name="card" id="card" placeholder="1111-2222-3333-4444">
+                <label for="name">Address Line 2</label>
+                <input type="text" name="address" id="address" placeholder="Unit 4 Building 2">
             </div>
             <div class="input-container">
                 <div class="input-line">
-                    <label for="date">Expiring Date</label>
-                    <input type="text" name="date" id="date" placeholder="09-22">
+                    <label for="date">City</label>
+                    <input type="text" name="city" id="city" placeholder="Perth">
                 </div>
                 <div class="input-line">
-                    <label for="cvc">CVC</label>
-                    <input type="text" name="cvc" id="cvc" placeholder="***">
+                    <label for="cvc">Postcode</label>
+                    <input type="text" name="post" id="post" placeholder="6000">
                 </div>
             </div>
             <a href="order-success.html" class="btn">Complete Order</a>

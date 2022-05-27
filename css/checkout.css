@@ -5,6 +5,18 @@
     transition: 0.5s;
 }
 
+input [type= "button"] span{
+    background-color: none;
+    color: #3a473a;
+    font-weight: 500;
+    font-size: 18px;
+    height: 50px;
+    padding: 0 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 
 .progress-checkout-container{
     display: flex;
@@ -29,6 +41,7 @@
     margin-bottom: 2.5rem;
     font-weight: 500;
     opacity: 0.8;
+    color: #453e30;
 }
 
 .checkout-form{
@@ -81,18 +94,21 @@ input[type="text"]::placeholder{
 }
 
 input[type="button"]{
-    background-color: 181 119 76;
-    color: #fff;
+    color: rgb(178 162 139);
+    background-color: #fff;
     font-weight: 500;
     font-size: 18px;
     height: 50px;
-    padding: 0 30px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 input[type="button"]:hover{
-    background-color: rgb(226, 165, 122);
+    text-decoration: underline;
 }
 
+.checkout-process .btn{
+    border-radius: 1.5rem;
+    padding: 2rem;
+}

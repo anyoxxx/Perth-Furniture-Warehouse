@@ -10,16 +10,19 @@
     <script src="https://kit.fontawesome.com/7ee5ce7b9e.js" crossorigin="anonymous"></script>
 
     <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/detail.css">
     <link rel="stylesheet" href="css/style.css">
+    
 
 </head>
 <body>
+
 
 <!-- header section starts  -->
 
 <header class="header">
 
-    <a href="/furniture website/home.html" class="logo"> <img src="/assets/logo.png"></a>
+    <a href="home.html" class="logo"> <img src="/assets/logo.png"></a>
 
     <form action="" class="search-form">
         <input type="search" placeholder="Search here..." id="search-box">
@@ -126,6 +129,99 @@
 </div>
 
 
+<div class="form-container">
+    <form class="back"> 
+        <input type="button" value="<< Back"
+        onclick="history.go(-1)">
+    </form>
+<main class="container">
+
+    <!-- Left Column / Headphones Image -->
+    <div class="left-column">
+      <img data-image="beige" class="active" src="/assets/images/populer-products/bed1.jpg" alt="">
+    </div>
+
+
+    <!-- Right Column -->
+    <div class="right-column">
+
+      <!-- Product Description -->
+      <div class="product-description">
+        <h1>Designer Bed</h1>
+        <br>
+        <br>
+        <p>The preferred choice of a vast range of acclaimed DJs. Punchy, bass-focused sound and high isolation. Sturdy headband and on-ear cushions suitable for live performance</p>
+        <div class="product-price">
+            <span>$1400</span>
+        </div>
+        
+      </div>
+
+        <!-- Product Color -->
+        <div class="product-color">
+
+          <div class="color-choose">
+            <div>
+              <input data-image="beige" type="radio" id="beige" name="color" value="beige" checked>
+              <label for="beige"><span></span></label>
+            </div>
+            <div>
+              <input data-image="grey" type="radio" id="grey" name="color" value="grey">
+              <label for="grey"><span></span></label>
+            </div>
+            <div>
+              <input data-image="black" type="radio" id="black" name="color" value="black">
+              <label for="black"><span></span></label>
+            </div>
+          </div>
+
+        </div>
+
+      <!-- Product Pricing -->
+      <div class="product-price">
+        <a href="#" class="cart-btn">Add to cart</a>
+      </div>
+    </div>
+  </main>
+  <br>
+  <br>
+  <br>
+
+  <!--Product Details-->
+  <section class="product-details">
+
+      <div class="product-about">
+        <h3>About</h3>
+        <br>
+        <br>
+        <br>
+        <p>The Atelier is a statement piece that channels modern Parisian apartment aesthetic with curved form and rounded silhouette. This piece boasts a refined allure that combines a contemporary shape with a romantic feminine flair. The generous seat with plush cushioning and the elegant curve of its backrest creates an aesthetic that is generous, yet light.</p> 
+      </div>
+      
+      <div class="product-text">
+        <h3>Details</h3>
+        <br>
+        <br>
+            <table>
+                <tr>
+                    <td>Specifications</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                </tr>
+                <tr>
+                    <td>Dimensions</td>
+                </tr>
+                <tr>
+                    <td>Individual Order</td>
+                </tr>
+            </table>
+      </div>
+
+  </div>
+
+  </section>
+
 <!-- footer section  -->
 
 <section class="footer">
@@ -174,7 +270,7 @@
 </section>
 
 <!-- custom js file link  -->
-<script src="js/script.js"></script>
+<script src="/js/script.js"></script>
     
 </body>
 </html>
