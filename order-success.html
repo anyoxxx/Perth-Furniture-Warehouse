@@ -11,7 +11,7 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="../homepage/style.css">
+    <link rel="stylesheet" href="/css/order-success.css">
 
 </head>
 <body>
@@ -20,7 +20,7 @@
 
 <header class="header">
 
-    <a href="home.html" class="logo"> <img src="/assets/logo.png"></a>
+    <a href="index.html" class="logo"> <img src="/assets/logo.png"></a>
 
     <form action="" class="search-form">
         <input type="search" placeholder="Search here..." id="search-box">
@@ -45,7 +45,7 @@
 <!-- navbar  -->
 
 <nav class="navbar">
-    <a href="/home.html">Home</a>
+    <a href="/index.html">Home</a>
     <a href="shop.html">Shop</a>
     <a href="about.html">About</a>
     <a href="#">Team</a>
@@ -126,24 +126,54 @@
 
 </div>
 
-
-    
-    
 <br>
 <br>
 <br>
+  
 
+<!--Order Success Section starts-->
 
-    <!--Subscription-->
-    <section class="newsletter" id="contact">
-        <h2>Subscribe to Our Newsletter</h2>
-        <div class="news-box">
-            <input type="text" placeholder="Enter Your Email...">
-            <a href="#" class="btn">Subscribe</a>
-        </div>
-    </section>
-    
+<section class="order">
+    <div class="form-container">
+        <form class="back"> 
+            <input type="button" value="<< Back"
+            onclick="history.go(-1)">
+        </form>
+    </div>
 
+    <div class="break">
+
+    </div>
+
+    <div class="order-success">
+        <h1 class="success"> Order Confirmed!</h1>
+        <a href="shop.html" class="shop-btn">Continue Shopping</a>
+    </div>
+
+    <div class="success-note">
+        <p>
+            Thank you for shopping with us. We are currently 
+            processing your order. Once the order has been 
+            processed, your order will be dispatched in 3-7 
+            business days.
+        </p>
+        <br>
+        <br>
+        <p>
+            Please see our FAQ sheets for more details regarding returns and exchanges.
+            If you do have any questions regarding your order, please contact 
+            +61 08 6377 7273 or kindly send us an email at 
+            perthfurniturewarehouse@gmail.com.
+        </p>
+        <br>
+        <br>   
+        <br>
+        <br> 
+        <span><p> Until then, keep browsing! </p></span>
+
+    </div>
+
+</section>
 
 <!-- footer section  -->
 
@@ -191,9 +221,10 @@
     </div>
 
 </section>
+</body>
+</html>
+
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
     
-</body>
-</html>
