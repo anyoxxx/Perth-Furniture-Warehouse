@@ -1,11 +1,5 @@
  /*Homepage*/
-.logo img{
-    width: 90%;
-    max-width: 200px;
-    max-height: 200px;
-}
-
-
+ 
 .home{
     width: 100%;
     min-height: 100vh;
