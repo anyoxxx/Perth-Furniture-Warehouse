@@ -223,7 +223,6 @@
     font-size: 2.5rem;
     font-weight: 500;
     font-family: cochin;
-    text-transform: uppercase;
     color: #3a4731;
 }
 
@@ -316,9 +315,6 @@
 
     }
 }
-
-
-
 
 @media (max-width: 491px) {
     .home-text h1{

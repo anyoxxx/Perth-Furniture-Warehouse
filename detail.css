@@ -139,21 +139,6 @@ html, body {
     margin-right: 20px;
   }
   
-  .cart-btn {
-    display: inline-block;
-    background-color:rgb(181 119 76);
-    border-radius: 3rem;
-    font-family: 'Poppins';
-    font-size: 14px;
-    color: #FFFFFF;
-    text-decoration: none;
-    padding: 12px 30px;
-    transition: all .5s;
-  }
-  .cart-btn:hover {
-    background-color: rgb(196, 154, 126);
-  }
-  
   .product-details{
       background-color: rgb(226 218 213);
       display: -ms-grid;
@@ -230,6 +215,45 @@ input[type="button"]{
 
 input[type="button"]:hover{
     text-decoration: underline;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+button {
+  display: inline-block;
+  background-color:rgb(181 119 76);
+  border-radius: 3rem;
+  font-family: 'Poppins';
+  font-size: 14px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 12px 30px;
+  transition: all .5s;
+}
+button:hover {
+  background-color: rgb(196, 154, 126);
 }
 
 

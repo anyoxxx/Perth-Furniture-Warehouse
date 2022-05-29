@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>order-success</title>
+    <title>product-detail</title>
 
     <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://kit.fontawesome.com/7ee5ce7b9e.js" crossorigin="anonymous"></script>
 
     <!-- custom css file link  -->
+    <link rel="stylesheet" href="cart.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="order-success.css">
+    
 
 </head>
 <body>
+
 
 <!-- header section starts  -->
 
@@ -81,7 +83,7 @@
 
     <div class="box">
         <i class="fas fa-times"></i>
-        <img src="/assets/images/populer-products/sofa2.png" alt="">
+        <img src="assets/images/populer-products/sofa2.png" alt="">
         <div class="content">
             <h3>Leather Sofa</h3>
             <span class="quantity"> 1 </span>
@@ -112,69 +114,130 @@
 <div class="login-form">
 
     <form action="">
-        <h3>Login form</h3>
+        <h3>Login Form</h3>
         <input type="email" placeholder="Enter your email" class="box">
         <input type="password" placeholder="Enter your password" class="box">
-        <div class="Remember">
-            <input type="checkbox" name="" id="remember-me">
-            <label for="remember-me">Remember me</label>
+        <div class="remember">
+            <input type="checkbox" name="" id="Remember-me">
+            <label for="remember-me">Remember Me</label>
         </div>
-        <input type="submit" value="login now" class="btn">
+        <input type="submit" value="Login Now" class="btn">
         <p>Forget password? <a href="#">Click here</a></p>
         <p>Don't have an account? <a href="#">Create now</a></p>
     </form>
 
 </div>
 
-<br>
-<br>
-<br>
-  
+<!--Back button-->
+<div class="form-container">
+    <form class="back"> 
+        <input type="button" value="<< Back"
+        onclick="history.go(-1)">
+    </form>
+</div>
 
-<!--Order Success Section starts-->
 
-<section class="order">
-    <div class="form-container">
-        <form class="back"> 
-            <input type="button" value="<< Back"
-            onclick="history.go(-1)">
-        </form>
+<!--Cart Content-->
+<section class="cart-content">
+<div class="CartContainer">
+    <div class="Header">
+        <h3 class="Heading">Cart</h3>
+        <h5 class="Action">Remove all</h5>
     </div>
 
-    <div class="break">
-
+    <div class="Cart-Items">
+          <div class="image-box">
+              <img src="assets/images/populer-products/bed1.jpg"/>
+          </div>
+          <div class="about">
+              <h1 class="title">Designer Bed</h1>
+              <h3 class="subtitle">x 1</h3>
+          </div>
+          <div class="counter">
+              <div class="btn">+</div>
+              <div class="count">1</div>
+              <div class="btn">-</div>
+          </div>
+          <div class="prices">
+              <div class="amount">$2520.00</div>
+              <div class="save"><u>Save for later</u></div>
+              <div class="remove"><u>Remove</u></div>
+          </div>
     </div>
 
-    <div class="order-success">
-        <h1 class="success"> Order Confirmed!</h1>
-        <a href="shop.html" class="shop-btn">Continue Shopping</a>
+    <div class="Cart-Items pad">
+          <div class="image-box">
+              <img src="assets/images/populer-products/light1.jpg"/>
+          </div>
+          <div class="about">
+              <h1 class="title">Modern Lamp</h1>
+              <h3 class="subtitle">x 1</h3>
+          </div>
+          <div class="counter">
+              <div class="btn">+</div>
+              <div class="count">1</div>
+              <div class="btn">-</div>
+          </div>
+          <div class="prices">
+              <div class="amount">$1430.00</div>
+              <div class="save"><u>Save for later</u></div>
+              <div class="remove"><u>Remove</u></div>
+          </div>
     </div>
 
-    <div class="success-note">
-        <p>
-            Thank you for shopping with us. We are currently 
-            processing your order. Once the order has been 
-            processed, your order will be dispatched in 3-7 
-            business days.
-        </p>
-        <br>
-        <br>
-        <p>
-            Please see our FAQ sheets for more details regarding returns and exchanges.
-            If you do have any questions regarding your order, please contact 
-            +61 08 6377 7273 or kindly send us an email at 
-            perthfurniturewarehouse@gmail.com.
-        </p>
-        <br>
-        <br>   
-        <br>
-        <br> 
-        <span><p> Until then, keep browsing! </p></span>
+    <div class="Cart-Items pad">
+        <div class="image-box">
+            <img src="assets/images/populer-products/chair1.png"/>
+        </div>
+        <div class="about">
+            <h1 class="title">Artist Chair</h1>
+            <h3 class="subtitle">x 1</h3>
+        </div>
+        <div class="counter">
+            <div class="btn">+</div>
+            <div class="count">1</div>
+            <div class="btn">-</div>
+        </div>
+        <div class="prices">
+            <div class="amount">$580.00</div>
+            <div class="save"><u>Save for later</u></div>
+            <div class="remove"><u>Remove</u></div>
+        </div>
+  </div>
 
+  <div class="Cart-Items pad">
+    <div class="image-box">
+        <img src="assets/images/populer-products/light1.jpg"/>
     </div>
+    <div class="about">
+        <h1 class="title">Leather Sofa</h1>
+        <h3 class="subtitle">x 1</h3>
+    </div>
+    <div class="counter">
+        <div class="btn">+</div>
+        <div class="count">1</div>
+        <div class="btn">-</div>
+    </div>
+    <div class="prices">
+        <div class="amount">$1890.00</div>
+        <div class="save"><u>Save for later</u></div>
+        <div class="remove"><u>Remove</u></div>
+    </div>
+</div>
+
+  <hr> 
+  <div class="checkout">
+  <div class="total">
+      <div>
+          <div class="Subtotal">Sub-Total</div>
+          <div class="items">4 items</div>
+      </div>
+      <div class="total-amount">$6420.00</div>
+  </div>
+  <button class="button">Checkout Cart</button></div>
+</div>
 
 </section>
-
 <!-- footer section  -->
 
 <section class="footer">
@@ -211,7 +274,7 @@
 
         <div class="box">
             <h3>Newsletter</h3>
-            <p>Hear about our latest updates</p>
+            <p>Subscribe for latest updates</p>
             <form action="">
                 <input type="Email" name="" placeholder="Enter your email" id="">
                 <input type="submit" value="Subscribe" class="btn">
@@ -221,10 +284,9 @@
     </div>
 
 </section>
-</body>
-</html>
-
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
     
+</body>
+</html>

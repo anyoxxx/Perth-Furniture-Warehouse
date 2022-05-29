@@ -49,7 +49,7 @@
 <nav class="navbar">
     <a href="index.html">Home</a>
     <a href="shop.html">Shop</a>
-    <a href="about.html">About</a>
+    <a href="#">About</a>
     <a href="#">Team</a>
     <a href="#">Blog</a>
     <a href="#">Contact</a>
@@ -128,6 +128,7 @@
 
 </div>
 
+<!--Back button-->
 
 <div class="form-container">
     <form class="back"> 
@@ -178,10 +179,18 @@
           </div>
 
         </div>
+<!--Add to cart success message-->
+
+        <div id="overlay" onclick="off()">
+            <div id="text">Item added to cart!</div>
+          </div>
+          
+          <div class="cart-btn">
+            <button onclick="on()">Add to Cart</button>
+          </div>
 
       <!-- Product Pricing -->
       <div class="product-price">
-        <a href="#" class="cart-btn">Add to cart</a>
       </div>
     </div>
   </main>
@@ -244,7 +253,7 @@
             <a href="#"> <i class="fas fa-arrow-right"></i> FAQ</a>
             <a href="#"> <i class="fas fa-arrow-right"></i> Pricing</a>
             <a href="blog.html"> <i class="fas fa-arrow-right"></i> Blog</a>
-            <a href="about.html"> <i class="fas fa-arrow-right"></i> About</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> About</a>
         </div>
 
         <div class="box">
